@@ -1,0 +1,40 @@
+void main() {
+  // This is my first line of code
+   print("prime number between 20   to 50 are ");
+   int first=20, last=50;
+   displayprimenumber(20,50);
+  
+ 
+}
+void displayprimenumber( int first1,last1){
+    
+for ( int i=first1 ; i<=last1 ; i++)
+  {
+     for ( int j=2 ; j<i/2 ; j++)
+     {
+         if (i%j==0)
+            break;
+         else{
+           print(i);
+           break;
+          }
+      }
+  }
+}
+output
+prime number between 20   to 50 are 
+21
+23
+25
+27
+29
+31
+33
+35
+37
+39
+41
+43
+45
+47
+49

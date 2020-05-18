@@ -1,0 +1,14 @@
+void main(){
+  print("addition of two number");
+  int num1= 44667, num2=34674;
+  int sum=0;
+  sum= num1+num2;
+  print(sum);
+}
+
+
+
+output
+
+addition of two number
+79341
