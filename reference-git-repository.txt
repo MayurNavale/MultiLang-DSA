@@ -1,0 +1,8 @@
+$ git push
+fatal: The current branch secondBranch has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin secondBranch
+
+
+https://github.com/smartherd/DartTutorial
