@@ -1,0 +1,34 @@
+coustomer detail using class
+------------------------------------------
+
+code:
+
+void main(){
+  var cust1=coustomer();
+  var cust2=coustomer();
+  
+  cust1.name="rahul";
+  cust1.sales=20000;
+   cust1.groth=22;
+   cust1.showcustdetail();
+  print("---------------------------");
+  cust2.name="rahul";
+  cust2.sales=29000;
+   cust2.groth=26;
+   cust2.showcustdetail();
+}
+
+class coustomer{
+   String name;
+  int  sales=0;
+  int groth=0;
+   void showcustdetail()=>print("${this.name}:-this coustomer have salse of ${this.sales} which groth than last month by${this.groth}present");
+  
+}
+
+
+output:
+
+rahul:-this coustomer have salse of 20000 which groth than lastmonth by 22 present
+---------------------------
+rahul:-this coustomer have salse of 29000 which groth than lastmonth by 26 present

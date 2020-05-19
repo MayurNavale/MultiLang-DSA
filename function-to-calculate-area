@@ -1,0 +1,47 @@
+
+----------------------------------------
+area value of rectangle 
+----------------------------------------
+
+
+void main(){
+       int l=2243,b=436;
+  int areaanswer=calculatearea(l,b);
+  printarea(areaanswer);
+   
+}
+
+int calculatearea(int length, int breath)=>length*breath;
+
+void printarea(int area)=>print("the area value of rectangle is $area");
+
+
+output:
+the area value of rectangle is 977948
+
+
+
+-----------------------------------------------
+function call without declearing paramater
+----------------------------------------------
+
+// 1. Required Parameters
+// 2. Optional Positional Parameters
+
+void main() {
+  printpgrmlang("cpp","c#","html","css");
+}
+
+void printpgrmlang(String lang1,String lang2,String lang3,String lang4){
+  print("language 1= $lang1");
+  print("language 1= $lang4");
+  print("language 1= $lang3");
+  print("language 1= $lang2");
+}
+
+
+output:
+language 1= cpp
+language 1= css
+language 1= html
+language 1= c#

@@ -1,0 +1,56 @@
+void main(){
+  var cust1=coustomer();
+  var ved1=vender();
+  
+  cust1.name="rahul kulkarni";
+  cust1.sales=20000;
+   cust1.groth=22;
+   cust1.show();
+  cust1.showcustdetail();
+
+  print("---------------------------");
+  ved1.name="rahul kolate";
+  ved1.sales=29000;
+   ved1.groth=26;
+  ved1.show();
+   ved1.showvenderdetail();
+}
+
+class coustomer{
+   String name;
+  int  sales=0;
+  int groth=0;
+ 
+  void show()=>print("customer name=${this.name},\nsales=${this.groth}\ngroth=${this.groth}");
+
+   void showcustdetail()=>print("\nthis coustomer have salse of ${this.sales} \nwhich groth than last month by${this.groth}present");
+  
+}
+
+class vender extends coustomer{
+  
+    void show()=>print("vender name=${this.name},\nsales=${this.sales}\ngroth=${this.groth}");
+  //overloading
+   void showvenderdetail()=>print("\nthis vender have salse of ${this.sales} \nwhich groth than last month by${this.groth}present");
+  
+}
+
+
+
+-----------------------------
+output
+
+customer name=rahul kulkarni,
+sales=22
+groth=22
+this coustomer have salse of 20000 
+which groth than last month by22present
+
+---------------------------
+
+vender name=rahul kolate,
+sales=29000
+groth=26
+this vender have salse of 29000 
+which groth than last month by26present
+

@@ -1,0 +1,35 @@
+// Objectives
+// 1. Default Getter and Setter
+// 2. Custom Getter and Setter
+// 3. Private Instance Variable-----------------------
+
+void main(){
+  var sales1=sales();
+  sales1.salesholdername="peater";
+  sales1.salesamount=4000;
+  print(sales1.salesholdername);
+  print(sales1.salesamount);
+  
+}
+  
+  class sales{
+    
+    int totalsales=0;
+   String salesholdername;
+  
+  
+  void set salesamount(int salesappera)=>totalsales=salesappera+2000;
+  int get salesamount=>totalsales;
+
+}
+
+
+
+
+
+
+ output
+ 
+ 
+ peater
+6000
