@@ -1,0 +1,50 @@
+void main(){
+    print("Retail salse customer detail");
+  print("------------with constructor---------------");
+  var cust3=coustomer("wiki",322444,42);
+     cust3.showcustdetail();
+  var cust1=coustomer( null,0,0);
+  var cust2=coustomer(null,0,0);
+  
+  print("---------------------------");
+  cust1.name="rahul";
+  cust1.sales=20000;
+   cust1.groth=22;
+   cust1.showcustdetail();
+ 
+  print("---------------------------");
+  cust2.name="nikhil";
+  cust2.sales=29000;
+   cust2.groth=26;
+   cust2.showcustdetail();
+ 
+}
+
+class coustomer{
+   String name;
+  int  sales=0;
+  int groth=0;
+  
+  coustomer(this.name,this.sales,this.groth);
+  
+   void showcustdetail()=>print("${this.name}:-\nthis coustomer have salse of ${this.sales} \nwhich groth than last month by${this.groth}present");
+  
+}
+
+
+
+output
+
+Retail salse customer detail
+------------with constructor---------------
+wiki:-
+this coustomer have salse of 322444 
+which groth than last month by42present
+---------------------------
+rahul:-
+this coustomer have salse of 20000 
+which groth than last month by22present
+---------------------------
+nikhil:-
+this coustomer have salse of 29000 
+which groth than last month by26present

@@ -1,0 +1,71 @@
+
+data type
+----------------------------------------------------------------------
+
+void main() {
+int score=23;
+  var count=2;
+  bool isvalid=true;
+  print("the score is $score, count is $count ,isvalid is $isvalid");
+}
+
+string 
+----------------------------------------------------------------
+void main(){
+  var one=1;
+   var name="john";
+   String s1 =" hello";
+   print ("myname is $name");
+     print ("the length of string s1 is ${s1.length}");
+}
+
+
+gread with switch
+---------------------------------------------------------------
+void main(){
+  var mark=64;
+  var gread='b';
+switch(gread){
+    
+    case'A':
+       print ("got A gread with $mark");
+       break;
+  case 'B':
+       print ("got B gread with $mark");
+    break;
+     case'C':
+       print("got C gread with $mark");
+}
+}
+
+
+break keword
+-------------------------------------------------
+void main(){
+  //var string1= '';
+myouterloop: for (int i=0 ; i<4; i++){
+  innerloop: for ( int j=0 ;j<4; j++){
+    print("$i,$j");
+      if (i==3 && j==3)
+        break myouterloop;
+  }
+}
+}
+
+output
+0,0
+0,1
+0,2
+0,3
+1,0
+1,1
+1,2
+1,3
+2,0
+2,1
+2,2
+2,3
+3,0
+3,1
+3,2
+3,3
